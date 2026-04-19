@@ -1,0 +1,35 @@
+menu "Project Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+    
+    config GPIO_IN1_PIN
+        int "GPIO_IN1_PIN"
+        default 18
+        help
+            GPIO pin number for IN1 of ULN2003.
+    
+    config GPIO_IN2_PIN
+        int "GPIO_IN2_PIN"
+        default 19
+        help
+            GPIO pin number for IN2 of ULN2003.
+            
+    config GPIO_IN3_PIN
+        int "GPIO_IN3_PIN"
+        default 20
+        help
+            GPIO pin number for IN3 of ULN2003.
+            
+    config GPIO_IN4_PIN
+        int "GPIO_IN4_PIN"
+        default 21
+        help
+            GPIO pin number for IN4 of ULN2003.
+            
+    config LED_BUILTIN_PIN
+        int "LED_BUILTIN_PIN"
+        default 8
+        help
+            Onboard LED pin number.
+            
+endmenu
