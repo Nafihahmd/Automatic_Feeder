@@ -1,3 +1,7 @@
+/**
+ * @file stepper_uln2003.c
+ * @brief Implementation of ULN2003A stepper motor driver.
+ */
 #include "stepper_uln2003.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -48,6 +52,15 @@ void stepper_init(stepper_t *m)
     m->mode = STEPPER_MODE_WAVE;  // Default to wave step
 }
 
+/**
+ * @brief Apply a step pattern to GPIO pins.
+ *
+ * Sets the output level of each GPIO according to the given pattern.
+ * A short delay is introduced to allow signal stabilization.
+ *
+ * @param[in] m Pointer to stepper handle
+ * @param[in] pattern Array of 4 values representing coil states
+ */
 static void apply_step(stepper_t *m, const uint8_t *pattern)
 {
     // printf("Applying step: [%d %d %d %d]\n", pattern[0], pattern[1], pattern[2], pattern[3]);
