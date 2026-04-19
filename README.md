@@ -46,7 +46,7 @@ This is a hobby project focused on building a reliable, connected feeder with re
 
 ## Status
 
-🚧 Work in progress
+Work in progress
 
 ---
 
@@ -59,4 +59,5 @@ This is a hobby project focused on building a reliable, connected feeder with re
 
 ## Enclosure
 
-The enclosure for the project is 3D printed from the following developer:
+The enclosure design is sourced from [this Thingiverse project](https://www.thingiverse.com/thing:4935745#google_vignette).  
+Thanks to the original creator for sharing it.
